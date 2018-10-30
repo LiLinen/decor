@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace LiLinen\Decor\Decorator;
@@ -10,7 +11,7 @@ class DecoratorCollection extends ArrayCollection
     /**
      * @param DecoratorInterface[] $elements
      */
-    public function __construct(array $elements)
+    public function __construct(array $elements = [])
     {
         parent::__construct();
 

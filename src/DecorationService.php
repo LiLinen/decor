@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace LiLinen\Decor;
@@ -6,12 +7,12 @@ namespace LiLinen\Decor;
 use LiLinen\Decor\Exception\DecorationException;
 use LiLinen\Decor\Factory\InstanceFactoryInterface;
 use LiLinen\Decor\Factory\ProxyFactoryInterface;
-use LiLinen\Decor\Reader\ReaderInterface;
+use LiLinen\Decor\Reader\AnnotationReaderInterface;
 
 class DecorationService
 {
     /**
-     * @var ReaderInterface
+     * @var AnnotationReaderInterface
      */
     private $reader;
 
@@ -26,12 +27,12 @@ class DecorationService
     private $proxyFactory;
 
     /**
-     * @param ReaderInterface $reader
+     * @param AnnotationReaderInterface $reader
      * @param InstanceFactoryInterface $instanceFactory
      * @param ProxyFactoryInterface $proxyFactory
      */
     public function __construct(
-        ReaderInterface $reader,
+        AnnotationReaderInterface $reader,
         InstanceFactoryInterface $instanceFactory,
         ProxyFactoryInterface $proxyFactory
     ) {

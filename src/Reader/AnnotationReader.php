@@ -1,22 +1,23 @@
 <?php
+
 declare(strict_types=1);
 
 namespace LiLinen\Decor\Reader;
 
-use Doctrine\Common\Annotations\AnnotationReader as DoctrineAnnotationReader;
+use Doctrine\Common\Annotations\Reader;
 use LiLinen\Decor\Decoration\DecorationInterface;
 
-class AnnotationReader
+class AnnotationReader implements AnnotationReaderInterface
 {
     /**
-     * @var DoctrineAnnotationReader
+     * @var Reader
      */
     private $annotationReader;
 
     /**
-     * @param DoctrineAnnotationReader $reader
+     * @param Reader $reader
      */
-    public function __construct(DoctrineAnnotationReader $reader)
+    public function __construct(Reader $reader)
     {
         $this->annotationReader = $reader;
     }

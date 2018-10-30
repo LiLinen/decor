@@ -1,9 +1,10 @@
 <?php
+
 declare(strict_types=1);
 
 namespace LiLinen\Decor\Reader;
 
-interface ReaderInterface
+interface AnnotationReaderInterface
 {
     /**
      * @param \ReflectionClass $reflectionClass
