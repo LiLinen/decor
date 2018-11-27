@@ -3,3 +3,6 @@
 
 Add method decorations with annotations.
  
+ ## Installation
+ 
+`composer require lilinen/decor`
