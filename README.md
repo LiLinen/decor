@@ -6,3 +6,8 @@ Add method decorations with annotations.
  ## Installation
  
 `composer require lilinen/decor`
+
+## Related Projects
+
+* [decor-bundle](https://github.com/LiLinen/decor-bundle)
+* [decor-example](https://github.com/LiLinen/decor)
