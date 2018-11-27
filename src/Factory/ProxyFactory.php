@@ -8,7 +8,7 @@ use LiLinen\Decor\Decorator\DecoratorCollection;
 use LiLinen\Decor\Decorator\DecoratorInterface;
 use ProxyManager\Factory\AccessInterceptorValueHolderFactory;
 
-final class ProxyFactory
+final class ProxyFactory implements ProxyFactoryInterface
 {
     /**
      * @var AccessInterceptorValueHolderFactory
