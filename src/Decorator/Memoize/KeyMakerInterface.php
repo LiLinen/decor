@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace LiLinen\Decor\Decorator\Memoize;
 
 interface KeyMakerInterface

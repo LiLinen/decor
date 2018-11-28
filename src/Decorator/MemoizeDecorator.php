@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace LiLinen\Decor\Decorator;
 
 use LiLinen\Decor\Decoration\DecorationInterface;
@@ -79,7 +81,7 @@ class MemoizeDecorator implements DecoratorInterface
             throw new DecorationException('Decoration '.\get_class($decoration).' must be instanceof Memoize!');
         }
 
-        return function ($proxy, $instance, $method, $params, $returnValue, & $returnEarly) use ($decoration) {
+        return function ($proxy, $instance, $method, $params, $returnValue) use ($decoration) {
             $key = $this->keyMaker->makeKey($instance, $method, $params);
 
             if ($this->cache->has($key) === true) {

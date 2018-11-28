@@ -1,10 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace LiLinen\Decor\Decoration;
 
 /**
  * @Annotation
  * @Target("METHOD")
+ *
+ * @see \LiLinen\Decor\Decorator\MemoizeDecorator
  */
 final class Memoize extends AbstractDecoration
 {
